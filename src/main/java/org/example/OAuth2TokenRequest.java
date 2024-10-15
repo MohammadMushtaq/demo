@@ -14,7 +14,7 @@ public class OAuth2TokenRequest {
             // Set your Tenant ID, Client ID, Client Secret, and Scope/Resource here
             String tenantId = "0876713d-a522-4b15-a887-3e9dacb1c635";
             String clientId = "e6a7cb1d-e1bb-4190-b1ee-32633506b8b1";
-            String clientSecret = "";
+            String clientSecret = "q";
             String resource = "https://storage.azure.com"; // For Azure Storage
 
             // Build the URL for the token request
