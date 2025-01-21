@@ -2,6 +2,7 @@ package org.example;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Arrays;
 
 public class StudentArray {
 
@@ -37,12 +38,12 @@ public class StudentArray {
 
     public int totalSumOfMarks() {
 
-        //return Arrays.stream(marks).sum();
-        int sum = 0;
+        return Arrays.stream(marks).sum();
+       /* int sum = 0;
         for (int mark : marks) {
             sum = mark + sum;
         }
-        return sum;
+        return sum;*/
     }
 
     public int maxMarks() {
@@ -72,6 +73,8 @@ public class StudentArray {
     public BigDecimal average() {
         int sum = totalSumOfMarks();
         int number = getNumberOfMarks();
+        int avg = sum / number;
+        System.out.println(avg);
 
         return new BigDecimal(sum).divide(new BigDecimal(number), 3, RoundingMode.UP);
     }

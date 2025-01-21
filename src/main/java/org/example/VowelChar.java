@@ -16,11 +16,11 @@ public class VowelChar {
     }
 
     public boolean checkVowel(char a) {
-//        for (char vowel : vowelChar) {
-//            if (vowel == a) {
-//                return true;
-//            }
-//        }
+        for (char vowel : vowelChar) {
+            if (vowel == a) {
+                return true;
+            }
+        }
 
         for (int i = 0; i < vowelChar.length; i++) {
             if (vowelChar[i] == a) {
@@ -29,6 +29,5 @@ public class VowelChar {
         }
         return false;
     }
-
 
 }

@@ -13,6 +13,24 @@ public class Anagram {
         boolean sil = areAnagrams("silent", "listen");
         System.out.println(sil);
 
+/*        String abcd = "AAABCDFRA";
+
+        String a = abcd.substring(0, 2);
+        String b = abcd.substring(2);
+        System.out.println(a);
+        System.out.println(b);
+
+        String a1 = abcd.replaceAll("A", "") + b;
+        String a2 = abcd.replace("A", "") + b;
+        System.out.println(a1);
+        System.out.println(a2);*/
+
+   /*     int arr[] = {12, 23, 4};
+        for (int i = 0; i < 1000; i++) {   //4
+            arr[0] = i;                   //[4 4 23] // [5,4,23]
+            Arrays.sort(arr);             //[4,4,23] // []
+            System.out.println(Arrays.toString(arr));}*/
+
     }
 
     public static boolean isAnagram(String s, String t) {
@@ -27,7 +45,6 @@ public class Anagram {
     }
 
     public static boolean areAnagrams(String str1, String str2) {
-
         if (str1 != null && str2 != null) {
             if (str1.length() == str2.length()) {
                 String lowerStr1 = str1.toLowerCase();
@@ -42,4 +59,5 @@ public class Anagram {
         }
         return false;
     }
+
 }

@@ -1,4 +1,4 @@
-package org.example;
+package com.bcone.junit;
 
 import java.io.OutputStream;
 import java.net.HttpURLConnection;

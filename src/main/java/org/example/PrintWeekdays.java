@@ -11,7 +11,7 @@ public class PrintWeekdays {
             if (days.length() > daywithMostChar.length()) {
                 daywithMostChar = days;
             }
-            System.out.print(days);
+            System.out.print(days + " ");
         }
         System.out.println();
         System.out.println(daywithMostChar);
@@ -29,7 +29,7 @@ public class PrintWeekdays {
         }
         System.out.println();
 //-------------------------------------------------------------
-        String sentence = "hi howw arewww youwwww";
+        String sentence = "hi how are you";
 
         String[] arrWord = sentence.split("");
         for (String a : arrWord) {
