@@ -1,3 +1,4 @@
+/*
 package org.example;
 
 import jakarta.ws.rs.client.Client;
@@ -29,3 +30,4 @@ public class Zuora {
         client.close();
     }
 }
+*/

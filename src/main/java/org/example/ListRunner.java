@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.Vector;
 public class ListRunner {
 
     public static void main(String[] args) {
+
 
         List<Integer> integerList = List.of(232, 32, 442, 42);
         System.out.println(integerList);
@@ -48,6 +50,20 @@ public class ListRunner {
             if (iterator.next().endsWith("at")) {
                 iterator.remove();
             }
+        }
+    }
+
+    public static class SortList {
+
+        public static void main(String[] args) {
+
+            List<Integer> number = List.of(44, 33, 55, 22, 79);
+
+            ArrayList<Integer> integers = new ArrayList<>(number);
+            Collections.sort(integers);
+            System.out.println(integers);
+
+
         }
     }
 }

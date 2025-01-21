@@ -1,39 +1,40 @@
-    package org.example;
+package org.example;
 
-    public class BinarySearch {
+public class BinarySearch {
 
-        public static int binarySearch(int arr[], int x) {
+    public static int binarySearch(int arr[], int target) {
 
-            int l = 0;
-            int r = arr.length-1;  // Incorrectly set to one past the last valid index
+        int low = 0, high = arr.length - 1;
 
-            while (l <= r) {
+        while (low <= high) {
 
-                int m = l + (r - l) / 2;
+            int mid = low + (high - low) / 2;   //10, 20, 30, 40, 50, 60, 70, 80, 90, 100
 
-                if (arr[m] == x)
-                    return m;
-
-                if (arr[m] < x)
-                    l = m + 1;
-                else
-                    r = m - 1;
+            if (arr[mid] == target) {
+                return mid;            // Target found
             }
 
-            return -1;
+            if (arr[mid] < target) {
+                low = mid + 1;          // Search right
+            } else {
+                high = mid - 1;         // Search left
+            }
         }
 
-        public static void main(String[] args) {
+        return -1;  // Target not found
+    }
 
-            int arr[] = {93, 94, 95, 96, 97, 98, 99, 100, 101, 102};
+    public static void main(String[] args) {
 
-            int x = 94;
-            int result = binarySearch(arr, x);
+        int arrOfMarks[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 
-            if (result == -1) {
-                System.out.println("element is not present");
-            } else {
-                System.out.println("element present at index " + result);
-            }
+        int marks = 75;
+        int result = binarySearch(arrOfMarks, marks);
+
+        if (result == -1) {
+            System.out.println("element is not present");
+        } else {
+            System.out.println("element present at index " + result + " target " + marks);
         }
     }
+}

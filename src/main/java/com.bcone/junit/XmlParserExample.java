@@ -1,4 +1,4 @@
-package org.example;
+package com.bcone.junit;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -15,7 +15,7 @@ public class XmlParserExample {
                 "<Tags><TagSet><Tag><Key>tag-name-1 tag-name-2</Key><Value>24 34</Value></Tag></TagSet></Tags>";
         System.out.println(xmlStringNotworking.length());
 
-        String xmlworking="<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+        String xmlworking = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
                 "<Tags><TagSet><Tag><Key>tag-name-1 tag-name-2</Key><Value>24 34</Value></Tag></TagSet></Tags>";
         System.out.println(xmlworking.length());
 

@@ -1,4 +1,4 @@
-package org.example;
+package com.bcone.junit;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

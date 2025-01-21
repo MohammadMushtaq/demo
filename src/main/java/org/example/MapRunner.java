@@ -22,9 +22,11 @@ public class MapRunner {
 
         Map<String, Integer> hashMap = new HashMap<>(map1);
         System.out.println(hashMap.put("r", 9));
-        System.out.println("hashMap " + hashMap);
+        System.out.println("hashMap1 " + hashMap);
         System.out.println(hashMap.put("r", 10));
-        System.out.println("hashMap " + hashMap);
+        System.out.println("hashMap2 " + hashMap);
+        System.out.println(hashMap.put("r", 9));
+        System.out.println("hashMap3 " + hashMap);
 
         LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>();
         linkedHashMap.put("A", 3);

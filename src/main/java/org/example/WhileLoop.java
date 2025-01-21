@@ -14,6 +14,13 @@ public class WhileLoop {
         whileLoop.printSquareUptoLimit();
         System.out.println("____________");
         whileLoop.printCubeUptoLimit();
+        System.out.println("____________");
+        
+        int a = 1;
+        while (a < 30) {
+            System.out.println(a);
+            a++;
+        }
 
     }
 
@@ -32,4 +39,6 @@ public class WhileLoop {
             i++;
         }
     }
+
+
 }
